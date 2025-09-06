@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>App Dashboard</title>
+  <style>
+    body { font-family: system-ui, Arial; margin: 40px; max-width: 800px; }
+  </style>
+</head>
+<body>
+
+  <h1>My Automation Dashboard</h1>
+  <p>Your TikTok account is connected.</p>
+
+  <h2>Upload a New Video</h2>
+  <p>Select a video from your computer to schedule for posting.</p>
+  
+  <input type="file" id="videoFile">
+  <button onclick="showSuccess()">Schedule Video</button>
+
+  <p id="success-message" style="color: green; font-weight: bold;"></p>
+
+  <script>
+    function showSuccess() {
+      document.getElementById('success-message').innerText = 'Success! Your video has been scheduled for posting to TikTok.';
+    }
+  </script>
+
+</body>
+</html>
